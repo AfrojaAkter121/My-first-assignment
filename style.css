@@ -36,7 +36,7 @@ body{
 }
 nav{
     position: absolute;
-    width: 1800px;
+    width: 100%;
     height: 100px;
     left: 0;
     top: 0;
@@ -136,6 +136,48 @@ nav{
 }
 /* header section ends */
 /* main start here */
+.pillars-section{
+    position: static;
+    width: 1280px;
+    height: 324px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 80px 0px;
+}
+.pillars{
+    position: static;
+    width: 1280px;
+    height: 244px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 24px 0px;
+}
+.pillars-card{
+    width: 302px;
+    height: 244px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0px 24px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+}
+.pillars-para{
+    color: rgba(14, 14, 14, 0.7);
+    font-family: Fira Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
 .vision-section{
     position: static;
     width: 1280px;
@@ -203,7 +245,7 @@ nav{
 }
 .card-para{
     color: rgba(14, 14, 14, 0.7);
-    font-family: Fira Sans;
+    font-family: open Sans;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -375,6 +417,7 @@ nav{
     align-items: center;
     gap: 32;
     margin: 80px 0px;
+    margin-top: 200px;
 }
 .button-section-para{
     width: 1004px;
@@ -444,109 +487,113 @@ nav{
 }
 .news-card-btn{
     width: 139px;
-height: 48px;
-padding: 13px 26px 13px 26px;
-border-radius: 8px;
-background: rgb(0, 106, 80);
-color: rgb(255, 255, 255);
-font-family: open Sans;
-font-size: 14px;
-font-weight: 600;
-line-height: 22px;
-letter-spacing: 0%;
-text-align: center;
+    height: 48px;
+    padding: 13px 26px 13px 26px;
+    border-radius: 8px;
+    background: rgb(0, 106, 80);
+    color: rgb(255, 255, 255);
+    font-family: open Sans;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: center;
 }
-.news-card-btn:hover, .primary-btn:hover, .navbar-btn:hover{
+.news-card-btn:hover, .primary-btn:hover, .navbar-btn:hover, .subscribe-btn:hover{
     background-color: rgb(22, 43, 38) ;
 }
 .subscribe-section{
     position: static;
-width: 1280px;
-height: 395px;
-justify-content: center;
-align-items: center; 
-gap: 64;
-padding: 80px 100px 80px 100px;
-margin-top: 250px;
-border-radius: 24px;
-background: rgb(198, 228, 214);
+    width: 1280px;
+    height: 395px;
+    justify-content: center;
+    align-items: center; 
+    gap: 64;
+    padding: 80px 100px 80px 100px;
+    margin-top: 250px;
+    border-radius: 24px;
+    background: rgb(198, 228, 214);
 }
 .subscribe-section-div{
     width: 750px;
-height: 235px;
-margin-left: 280px;
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: center;
+    height: 235px;
+    margin-left: 280px;
+    margin-top: 60px;
 }
 .subscribe-title{
     width: 622px;
-height: 48px;
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: center;
-gap: 16;
-margin: 16px 0px;
-color: rgb(14, 14, 14);
-font-family: open Sans;
-font-size: 40px;
-font-weight: 700;
-line-height: 48px;
-text-align: center;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16;
+    margin: 16px 0px;
+    color: rgb(14, 14, 14);
+    font-family: open Sans;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
 } 
 .subscribe-para{
-width: 622px;
-height: 48px;
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: center;
-color: rgba(14, 14, 14, 0.7);
-font-family: open Sans;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-text-align: center;
-}
-.subscribe-input{
-width: 600px;
-height: 38px;
-/* display: flex;
-flex-direction: row;
-justify-content: flex-start;
-align-items: flex-start; */
-padding: 18px 40px 18px 40px;
-border-radius: 8px 0px 0px 8px;
-background: rgb(255, 255, 255);
-color: rgba(14, 14, 14, 0.3);
-font-family: open Sans;
-font-size: 18px;
-font-weight: 400;
-line-height: 19px;
-text-align: left;
-}
-.subscribe-btn{
-    position: static;
-    width: 150px;
-height: 56px;
-/* display: flex;
-flex-direction: row-reverse;
-justify-content: flex-end;
-align-items:flex-end;
-gap: 48; */
-padding: 17px 34px 17px 34px;
-flex: none;
-order: 1;
-flex-grow: 0;
-margin: 0px 0px;
-border-radius: 0px 8px 8px 0px;
-background: rgb(0, 106, 80);
+    width: 622px;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: rgba(14, 14, 14, 0.7);
+    font-family: open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
 }
 .input-btn{
-    display: inline;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    margin-top: 50px;
+}
+.subscribe-input{
+    position: relative;
+    width: 600px;
+    height: 55px;
+    border-radius: 8px 0px 0px 8px;
+    background: rgb(255, 255, 255);
+    color: rgba(14, 14, 14, 0.3);
+    font-family: open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    border: none;
+    display: inline-block;
+}
+.subscribe-btn{
+    width: 150px;
+    height: 56px;
+    padding: 17px 34px 17px 34px;
+    color: rgb(255, 255, 255);
+    font-family: open Sans;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+    border-radius: 0px 8px 8px 0px;
+    background: rgb(0, 106, 80);
+    border: none;
+    margin-left: -5px;
+}
+
+.last-para{
+    width: 622px;
+    height: 19px;
+    margin-top: 200px;
+    color: rgba(14, 14, 14, 0.7);
+    font-family: open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: center;
 }
