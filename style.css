@@ -13,6 +13,7 @@ body{
     align-items: center;
     gap: 80;
     padding: 0px;
+    background-color: rgb(250, 250, 248);
 }
 .primary-btn{
     width: 270px;
@@ -44,7 +45,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 24px 160px 24px 160px;
-    background: white;
+    background-color: rgb(250, 250, 248);
 
 }
 .navbar-heading{
@@ -221,6 +222,9 @@ nav{
     text-align: center;
     border: none;
 }
+.card-btn:hover{
+    background-color: aquamarine;
+}
 .yunus-description{
     position: static;
     width: 1280px;
@@ -269,19 +273,19 @@ nav{
 }
 .news{
     position: static;
-width: 1280px;
-height: 1406px;
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: flex-start;
-gap: 32;
-padding: 0px;
-flex: none;
-order: 3;
-flex-grow: 0;
-margin-top: 180px;
-margin-left: 0px;
+    width: 1280px;
+    height: 1406px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 32;
+    padding: 0px;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    margin-top: 180px;
+    margin-left: 0px;
 }
 .news-section-title{
     margin-bottom: 1px;
@@ -298,17 +302,251 @@ margin-left: 0px;
     padding: 48px;
     margin: 24px 0px;
     border-radius: 24px;
-    background: rgb(255, 255, 255);
+    background: rgb(255, 255, 255)
+
 }
 .news-img{
     position: static;
-width: 408px;
-height: 306px;
-/* Inside Auto Layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-margin: 0px 32px;
+    width: 408px;
+    height: 306px;
+    margin: 0px 32px;
+    border: none;
+    border-radius: 24px;
+}
+.news-information{
+    position: static;
+    width: 744px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 32;
+    margin: 0px 32px;
+    margin-bottom: 40px;
+}
+.news-card-title{
+    color: rgba(14, 14, 14, 0.8);
+    font-family: open Sans;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    text-align: left;
+    margin-top: 10;
+}
+.date-time{
+    width: 744px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 12px 0px;
+    /* font style */
+    color: rgba(14, 14, 14, 0.7);
+    font-family: open Sans;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+}
+.time{
+    margin-left: 20px;
+}
+.news-description{
+    width: 744px;
+    height: 72px;
+    margin: 12px 0px;
+    color: rgba(14, 14, 14, 0.7);
+    font-family: open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    
+}
+.button-section{
+    position: static;
+    width: 1280px;
+    height: 464px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 32;
+    margin: 80px 0px;
+}
+.button-section-para{
+    width: 1004px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 24;
+    margin: 0px 24px;
+    color: rgba(14, 14, 14, 0.7);
+    font-family: open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.button-section-title{
+    margin-top: 100Px;
+    color: rgb(14, 14, 14);
+    font-family:open Sans;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+}
+.button-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24;
+    padding: 40px;
+}
+.button-section-btn{
+    width: 240px;
+    height: 128px;
+    gap: 24;
+    padding: 40px;
+    margin: 0px 24px;
+    box-sizing: border-box;
+    border: 1px solid rgba(172, 171, 171, 0.15);
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    color: rgba(14, 14, 14, 0.8);
+    font-family: open Sans;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.button-section-input{
+    width: 1032px;
+    height: 64px;
+    align-items: center;
+    padding: 20px 40px 20px 40px;
+    margin: 32px 0px;
+    box-sizing: border-box;
+    border: 1px solid rgba(172, 171, 171, 0.15);
+    background: rgb(255, 255, 255);
+    color: rgba(14, 14, 14, 0.3);
+    font-family: open Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+.news-card-btn{
+    width: 139px;
+height: 48px;
+padding: 13px 26px 13px 26px;
+border-radius: 8px;
+background: rgb(0, 106, 80);
+color: rgb(255, 255, 255);
+font-family: open Sans;
+font-size: 14px;
+font-weight: 600;
+line-height: 22px;
+letter-spacing: 0%;
+text-align: center;
+}
+.news-card-btn:hover, .primary-btn:hover, .navbar-btn:hover{
+    background-color: rgb(22, 43, 38) ;
+}
+.subscribe-section{
+    position: static;
+width: 1280px;
+height: 395px;
+justify-content: center;
+align-items: center; 
+gap: 64;
+padding: 80px 100px 80px 100px;
+margin-top: 250px;
 border-radius: 24px;
-
+background: rgb(198, 228, 214);
+}
+.subscribe-section-div{
+    width: 750px;
+height: 235px;
+margin-left: 280px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+}
+.subscribe-title{
+    width: 622px;
+height: 48px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+gap: 16;
+margin: 16px 0px;
+color: rgb(14, 14, 14);
+font-family: open Sans;
+font-size: 40px;
+font-weight: 700;
+line-height: 48px;
+text-align: center;
+} 
+.subscribe-para{
+width: 622px;
+height: 48px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+color: rgba(14, 14, 14, 0.7);
+font-family: open Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+}
+.subscribe-input{
+width: 600px;
+height: 38px;
+/* display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: flex-start; */
+padding: 18px 40px 18px 40px;
+border-radius: 8px 0px 0px 8px;
+background: rgb(255, 255, 255);
+color: rgba(14, 14, 14, 0.3);
+font-family: open Sans;
+font-size: 18px;
+font-weight: 400;
+line-height: 19px;
+text-align: left;
+}
+.subscribe-btn{
+    position: static;
+    width: 150px;
+height: 56px;
+/* display: flex;
+flex-direction: row-reverse;
+justify-content: flex-end;
+align-items:flex-end;
+gap: 48; */
+padding: 17px 34px 17px 34px;
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 0px;
+border-radius: 0px 8px 8px 0px;
+background: rgb(0, 106, 80);
+}
+.input-btn{
+    display: inline;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
 }
